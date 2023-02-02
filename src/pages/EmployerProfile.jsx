@@ -9,6 +9,15 @@ import {
 } from "react-native";
 import Messages from "../components/Messages";
 
+const EmployerProfileStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+`;
+
 const EmployerProfile = () => {
   const [companyName, setCompanyName] = useState("");
   const [email, setEmail] = useState("");
@@ -124,4 +133,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default EmployerProfile;
+export default styled(EmployerProfile)``;
